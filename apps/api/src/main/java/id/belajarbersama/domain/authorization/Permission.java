@@ -1,0 +1,42 @@
+package id.belajarbersama.domain.authorization;
+
+/**
+ * Explicit capabilities. Roles grant permissions; domain invariants may still deny an action.
+ *
+ * @see docs/PERMISSION_MATRIX.md
+ */
+public enum Permission {
+    USER_READ_SELF,
+    CONTENT_READ_PUBLISHED,
+    LEARNING_PROGRESS_MANAGE,
+    BOOKMARK_MANAGE,
+    QUIZ_HISTORY_READ,
+    QA_CREATE,
+    QA_ASK,
+    QA_ANSWER,
+    QA_MARK_USEFUL,
+    QA_ACCEPT_ANSWER,
+    CONTENT_REPORT,
+    CONTENT_CREATE,
+    CONTENT_EDIT_OWN,
+    CONTENT_UPDATE_DRAFT,
+    CONTENT_SUBMIT,
+    CONTENT_REVIEW,
+    CONTENT_REQUEST_CHANGES,
+    CONTENT_APPROVE,
+    CONTENT_PUBLISH,
+    CONTENT_ARCHIVE,
+    CONTENT_MODERATE,
+    CONTENT_REPORT_REVIEW,
+    VERIFICATION_APPLY,
+    VERIFICATION_REVIEW,
+    VERIFICATION_APPROVE,
+    VERIFICATION_REVOKE,
+    VERIFICATION_GRANT,
+    TAXONOMY_MANAGE,
+    USER_MANAGE,
+    ROLE_MANAGE,
+    ROLE_ASSIGN,
+    SYSTEM_ADMIN,
+    AUDIT_READ
+}
