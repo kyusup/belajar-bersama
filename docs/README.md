@@ -94,10 +94,18 @@
 | [RELEASE.md](RELEASE.md) | Pre-production quality bar |
 | [CONSISTENCY_CHECKLIST.md](CONSISTENCY_CHECKLIST.md) | Doc + CI quality gate |
 
+## Phase 11 — Docker and Appium
+
+| Document / path | Purpose |
+|---|---|
+| [DOCKER.md](DOCKER.md) | Full Compose stack (API, web, Appium) |
+| [../testing/appium/README.md](../testing/appium/README.md) | Appium mobile-web tests |
+
 ## Cross-cutting
 
 | Document | Purpose |
 |---|---|
+| [DOCKER.md](DOCKER.md) | Full local stack with Docker Compose |
 | [OPEN_DECISIONS.md](OPEN_DECISIONS.md) | Explicit unresolved decisions |
 | [RELEASE.md](RELEASE.md) | Pre-production release bar |
 | [BACKUP.md](BACKUP.md) | Backup/restore expectations |

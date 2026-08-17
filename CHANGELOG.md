@@ -4,6 +4,14 @@ All notable implementation work is recorded here. Dates are development timestam
 
 ## Unreleased
 
+### Phase 11 — Docker full stack and Appium tests
+
+- Docker Compose runs Postgres, MinIO, API, Web, and Appium locally
+- Dockerfiles under `infra/docker/{api,web,appium}`
+- Next.js `output: 'standalone'` for container image
+- `testing/appium` — WebdriverIO + Appium mobile-web smoke tests
+- [docs/DOCKER.md](docs/DOCKER.md)
+
 ### Phase 10 — Git repository
 
 - Initialize GitHub remote `git@github.com:kyusup/belajar-bersama.git`

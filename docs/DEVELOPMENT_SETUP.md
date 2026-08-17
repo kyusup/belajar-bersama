@@ -30,6 +30,17 @@ The example file contains **local development placeholders**, not production sec
 
 ## 2. Start infrastructure
 
+### Option A — Full stack in Docker (recommended)
+
+```bash
+cp .env.docker.example .env.docker
+docker compose up -d --build
+```
+
+See [docs/DOCKER.md](DOCKER.md) for service URLs, Appium, and optional Android emulator profile.
+
+### Option B — Infrastructure only (apps on host)
+
 From the repository root:
 
 ```bash

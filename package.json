@@ -8,6 +8,11 @@
     "lint": "pnpm --filter web lint",
     "test:web": "pnpm --filter web test",
     "test:e2e": "pnpm --filter web test:e2e",
+    "docker:up": "docker compose up -d --build",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f",
+    "test:appium:ping": "npm --prefix testing/appium run test:ping",
+    "test:appium": "npm --prefix testing/appium test",
     "format:check": "pnpm --filter web format:check"
   }
 }

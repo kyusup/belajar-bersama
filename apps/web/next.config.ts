@@ -4,6 +4,7 @@ const apiUrl = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8080";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  output: "standalone",
   transpilePackages: ["@belajar-bersama/shared"],
   poweredByHeader: false,
   async headers() {
