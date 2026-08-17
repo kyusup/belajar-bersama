@@ -5,9 +5,9 @@ x-api-env: &api-env
   POSTGRES_USER: belajar
   POSTGRES_PASSWORD: belajar
   DATABASE_URL: jdbc:postgresql://postgres:5432/belajar_bersama
-  CORS_ORIGINS: http://localhost:3000
-  API_URL: http://localhost:8080
-  APPLICATION_URL: http://localhost:3000
+  CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}
+  API_URL: ${API_URL:-http://localhost:8080}
+  APPLICATION_URL: ${APPLICATION_URL:-http://localhost:3000}
   AUTH_DEV_LOGIN: "true"
   AUTH_BOOTSTRAP_ADMINS: GOOGLE:admin-1
   AUTH_COOKIE_SECURE: "false"
@@ -97,7 +97,7 @@ services:
       context: .
       dockerfile: infra/docker/web/Dockerfile
       args:
-        NEXT_PUBLIC_API_URL: http://localhost:8080
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8080}
     container_name: belajar-bersama-web
     environment:
       PORT: "3000"

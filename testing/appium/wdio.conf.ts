@@ -5,6 +5,7 @@ const appiumPort = Number(process.env.APPIUM_PORT ?? "4725");
 const webBaseUrl = process.env.WEB_BASE_URL ?? "http://localhost:3000";
 const runMobile = process.env.RUN_MOBILE_TESTS === "true";
 const androidUdid = process.env.ANDROID_UDID ?? "emulator-5554";
+const chromeBinary = process.env.CHROME_BINARY ?? "/usr/bin/google-chrome";
 
 export const config: Options.Testrunner = {
   runner: "local",
@@ -27,12 +28,19 @@ export const config: Options.Testrunner = {
       ]
     : [
         {
+          platformName: "linux",
           browserName: "chrome",
           "appium:automationName": "Chromium",
           "appium:chromedriverAutodownload": true,
           "goog:chromeOptions": {
-            args: ["--headless=new", "--no-sandbox", "--disable-gpu", "--disable-dev-shm-usage"],
-            mobileEmulation: { deviceName: "Pixel 5" },
+            binary: chromeBinary,
+            args: [
+              "--headless=new",
+              "--no-sandbox",
+              "--disable-gpu",
+              "--disable-dev-shm-usage",
+              "--window-size=393,851",
+            ],
           },
         },
       ],
