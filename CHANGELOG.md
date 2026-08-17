@@ -4,6 +4,12 @@ All notable implementation work is recorded here. Dates are development timestam
 
 ## Unreleased
 
+### Phase 10 — Git repository
+
+- Initialize GitHub remote `git@github.com:kyusup/belajar-bersama.git`
+- Phase commits (0–2 through 9) pushed to `main`
+- `scripts/git-phase-commits.sh` for reproducible phase history
+
 ### Phase 9 — MVP audit and release readiness
 
 - Constitution compliance audit ([MVP_AUDIT.md](docs/MVP_AUDIT.md))

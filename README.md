@@ -4,11 +4,15 @@ Open learning platform and knowledge community for Indonesian society.
 
 Public published lessons and non-hidden Q&A can be read without an account. Contributors need competency-scoped verification. Independent checkers review educational content before publication.
 
-**Status:** Local MVP complete (Phases 0–8). Constitution audit passed — see [docs/MVP_AUDIT.md](docs/MVP_AUDIT.md). Not a production deploy.
+**Status:** Local MVP complete (Phases 0–9). Constitution audit passed — see [docs/MVP_AUDIT.md](docs/MVP_AUDIT.md). Not a production deploy.
+
+**Repository:** https://github.com/kyusup/belajar-bersama
 
 ## Quick start
 
 ```bash
+git clone git@github.com:kyusup/belajar-bersama.git
+cd belajar-bersama
 cp .env.example .env
 docker compose up -d
 cd apps/api && ./mvnw quarkus:dev

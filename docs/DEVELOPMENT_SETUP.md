@@ -17,6 +17,8 @@ Required on the host:
 ## 1. Clone and configure
 
 ```bash
+git clone git@github.com:kyusup/belajar-bersama.git
+cd belajar-bersama
 cp .env.example .env
 ```
 
